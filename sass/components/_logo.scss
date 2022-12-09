@@ -5,10 +5,12 @@
         font-size: 24px;
         line-height: calc(28 / 24);
         letter-spacing: 0.03em;
-    
-    // font-size: 26px;
-    // line-height: 1.19;
-    // margin-right: 91px;
+    @media screen and(min-width: $desktop) {
+        font-size: 26px;
+            line-height: 1.19;
+            margin-right: 91px;
+        }
+   
 }
 
 .logo__web {
@@ -18,8 +20,6 @@
     @extend .logo;
     display: inline-block;
     margin-bottom: 20px; 
-    // display: inline-block;
-    // margin-bottom: 20px;
 }
 
 .logo__white {

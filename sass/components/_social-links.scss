@@ -1,10 +1,11 @@
 .social-list {
     @extend %flexCentered;
     gap: 10px;
+    
 }
 .social__item {
     @extend %flexCentered;
-
+border-radius: 50%;
     width: 44px;
     height: 44px;
 }
@@ -22,7 +23,7 @@
     transition: background-color 250ms $time-changes;
 
     &:hover,
-    &:focus {
+    &:focus { 
             background-color: $accent-color;
             border-radius: 50%;
             color: $white;

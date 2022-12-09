@@ -2,22 +2,22 @@
     @extend %section;
     background-color: #f5f4fa;
 
-    // @media screen and(max-width: $mobile) {
-    //     width: $mobile;
-    // }
-    // @media screen and(max-width: $tablet) {
-    //     width: $tablet;
-    // }
 }
-// .staff__list {
-//     display: flex;
-//     gap: 30px;
+.staff__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-//     &:not(:last-child) {
-//             margin-right: 30px;
-//         }
-// }
+}
 .staff__item {
+    @media screen and(min-width: $tablet) {
+        width: calc((100% - 1* 30px) / 2);
+        
+    }
+        @media screen and(min-width: $desktop) {
+            width: calc((100% - 3* 30px) / 4);
+            
+        }
     margin-bottom: 30px;
     background-color: $white;
     // min-width: 270px;
@@ -30,7 +30,10 @@
     padding-top: 30px;
     padding-bottom: 24px;
     text-align: center;
-    // padding: 30px 32px;
+    @media screen and(min-width: $desktop) {
+           padding: 30px 32px;
+        }
+    
 }
 
 .staff__title {
@@ -40,7 +43,7 @@
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
-    // text-align: center;
+    
 }
 
 .staff__text {

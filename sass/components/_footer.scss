@@ -3,18 +3,29 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    
     &__container {
         @extend .container;
-        // text-align: center;
-            // display: flex;
-            // align-items: baseline;
+        @media screen and(min-width: $tablet) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: baseline;
+            }
         }
+    
 }
-
 .footer__thumb {
     text-align: center;
     margin-bottom: 60px;
-    // margin-right: 70px;
+    @media screen and(min-width: $tablet) {
+            margin-right: 168px;
+        }
+                 @media screen and(min-width: $desktop) {
+                     margin-right: 70px;
+                     margin-bottom: unset;
+                     text-align: left;
+                    }
 }
 .address__text,
 .address__link {
@@ -47,13 +58,15 @@
 .address__item:not(:last-child) {
     margin-bottom: 8px;
 }
-
-
-
 .join {
-    // margin-right: auto;
     text-align: center;
     margin-bottom: 60px;
+    @media screen and(min-width: $tablet) {
+            margin-bottom: unset;
+        }
+                 @media screen and(min-width: $desktop) {
+                    margin-right: auto;
+                    }
 }
 
 .join__text {
@@ -73,13 +86,16 @@
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    ;
+    
 }
 
 // /* footer form  */
 
 .subscribe {
     text-align: center;
+    @media screen and(min-width: $desktop) {
+            text-align: unset;
+        }
 }
 .subscribe__text {
        font-weight: 700;
@@ -96,15 +112,18 @@
 .subscribe__field {
     display: block;
     width: 100%;
-    // min-width: 358px;
     min-height: 50px;
     margin-bottom: 20px;
-
-    // padding-left: 16px;
-    // margin-right: 12px;
-    // margin-top: 20px;
-    // margin-bottom: 0;
-
+    @media screen and(min-width: $tablet) {
+            width: 450px;
+        }
+         @media screen and(min-width: $desktop) {
+                width: 358px;
+                padding-left: 16px;
+                margin-right: 12px;
+                
+                margin-bottom: 0;
+            }
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.03em;
@@ -129,8 +148,11 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-// .subscribe__thumb {
-//     display: flex;
-//     align-items: flex-end;
-// }
+.subscribe__thumb {
+    @media screen and(min-width: $desktop) {
+            
+    display: flex;
+        align-items: flex-end;
+    }
+}
 
