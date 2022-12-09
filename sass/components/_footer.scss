@@ -16,15 +16,17 @@
     
 }
 .footer__thumb {
-    text-align: center;
-    margin-bottom: 60px;
+    
+    
+    @media screen and(max-width: $predesktop) {
+        margin-bottom: 60px;
+        text-align: center;
+    }
     @media screen and(min-width: $tablet) {
             margin-right: 168px;
         }
                  @media screen and(min-width: $desktop) {
                      margin-right: 70px;
-                     margin-bottom: unset;
-                     text-align: left;
                     }
 }
 .address__text,
@@ -60,13 +62,12 @@
 }
 .join {
     text-align: center;
-    margin-bottom: 60px;
-    @media screen and(min-width: $tablet) {
-            margin-bottom: unset;
-        }
-                 @media screen and(min-width: $desktop) {
+    @media screen and(max-width:$pretablet) {
+        margin-bottom: 60px;
+    }
+        @media screen and(min-width: $desktop) {
                     margin-right: auto;
-                    }
+            }
 }
 
 .join__text {
@@ -92,9 +93,9 @@
 // /* footer form  */
 
 .subscribe {
-    text-align: center;
-    @media screen and(min-width: $desktop) {
-            text-align: unset;
+    
+    @media screen and(max-width: $predesktop) {
+            text-align: center;
         }
 }
 .subscribe__text {

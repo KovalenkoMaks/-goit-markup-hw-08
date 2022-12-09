@@ -17,15 +17,20 @@
     // flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .feature__item {
-    margin-bottom: 30px;
+    
+    &:not(:last-child) {
+        @media screen and(max-width: $pretablet) {
+            margin-bottom: 30px;
+        }
+    }
 
     @media screen and(min-width: $tablet) {
         width: calc((100% - 1 * 30px) / 2);
-        margin-bottom: 0;
+        
     }
         @media screen and(min-width: $desktop) {
              width: calc((100% - 3 * 30px) / 4);
-            //  margin-bottom: 0;
+            
          }
 }
 
