@@ -1,25 +1,36 @@
 .staff {
     @extend %section;
     background-color: #f5f4fa;
-}
-.staff__list {
-    display: flex;
-    gap: 30px;
 
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+    // @media screen and(max-width: $mobile) {
+    //     width: $mobile;
+    // }
+    // @media screen and(max-width: $tablet) {
+    //     width: $tablet;
+    // }
 }
+// .staff__list {
+//     display: flex;
+//     gap: 30px;
+
+//     &:not(:last-child) {
+//             margin-right: 30px;
+//         }
+// }
 .staff__item {
+    margin-bottom: 30px;
     background-color: $white;
-    min-width: 270px;
-    min-height: 368px;
+    // min-width: 270px;
+    // min-height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .staff__description {
-    padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    text-align: center;
+    // padding: 30px 32px;
 }
 
 .staff__title {
@@ -27,15 +38,15 @@
     color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: calc(19 / 16);
     letter-spacing: 0.03em;
-    text-align: center;
+    // text-align: center;
 }
 
 .staff__text {
     margin-bottom: 16px;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
 }

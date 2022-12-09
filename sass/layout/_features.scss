@@ -1,34 +1,40 @@
 .feature {
     @extend %section;
 }
-.feature__list {
-    display: flex;
-    gap: 30px;
-    flex-basis: calc((100% - 3 * 30px) / 4);
-}
+// .feature__list {
+//     display: flex;
+//     gap: 30px;
+//     flex-basis: calc((100% - 3 * 30px) / 4);
+// }
 
 .feature__card {
     @extend %flexCentered;
 
     margin-bottom: 30px;
-    width: 270px;
+    // width: 100%;
+    // text-align: center;
     height: 120px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #F5F4FA;
 }
 
+.feature__item{
+    margin-bottom: 30px;
+}
+
 .feature__title {
+    // шрифт не меняется
     margin-bottom: 10px;
 
     color: $title-text-color;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
-
     text-transform: uppercase;
 }
-
 .feature__text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
