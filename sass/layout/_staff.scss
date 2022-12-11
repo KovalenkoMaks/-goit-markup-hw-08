@@ -6,13 +6,16 @@
 .staff__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 
 }
 .staff__item {
+    
     @media screen and(min-width: $tablet) {
         width: calc((100% - 1* 30px) / 2);
-        
+        max-height: 622px;
+         
     }
         @media screen and(min-width: $desktop) {
             width: calc((100% - 3* 30px) / 4);

@@ -1,29 +1,61 @@
 .page-header__container {
     @media screen and(max-width: $pretablet) {
         padding: 16px 0px 16px 15px;
-        position: relative; 
+        position: relative;
+        
     }
-    // display: flex;
-    // align-items: center;
-    // border-bottom: 1px solid #ececec;
+       
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+
+    padding: 0 15px;
+}   
+
+.nav {
+   
+    @media screen and(max-width: $pretablet) {
+            margin-left: 25px;
+        }
+        margin-left: 87px;
+    margin-right: auto;
+    display: flex;
 }
-
-// .nav {
-//     margin-right: auto;
-// }
-
-// .nav__list {
-//     display: flex;
-// }
 .nav:not(:last-child) {
     @media screen and(max-width: $pretablet) { 
         margin-bottom: 306px;
     } 
+.nav__list {
+    @media screen and(min-width:$tablet) {
+        display: flex;
+    align-items: center;
+    }
+    
+    
 }
-// .nav__item:not(:last-child),
-// .page-header__item:not(:last-child) {
-//     margin-right: 50px;
-// }
+
+}
+.nav__item{
+    &:nth-child(1){
+            @media screen and(max-width:$predesktop) {
+                margin-right: 51px;
+            }
+        }
+    &:nth-child(2){
+        @media screen and(max-width:$predesktop) {
+                margin-right: 50px;
+            }
+    }
+        
+} 
+
+.nav__item:not(:last-child),
+.page-header__item:not(:last-child) {
+    @media screen and(min-width:$desktop) {
+         margin-right: 50px;
+    }
+   
+}
 .nav__item:not(:last-child) {
     @media screen and(max-width: $pretablet) {
         margin-bottom: 32px;
@@ -32,8 +64,10 @@
 .nav__link {
     letter-spacing: 0.02em;
     font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
     color: $title-text-color;
-    // display: block;
+   
     
 
     @media screen and(max-width: $pretablet) {
@@ -41,16 +75,15 @@
             line-height: calc(47 / 40);
           
     }    
-       
+    @media screen and(min-width:$tablet) {
+         display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
     
+   
     
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-    
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.02em;
+   
 
     transition: color 250ms $time-changes;
 
@@ -59,32 +92,43 @@
         color: $accent-color;
         outline: transparent;
     }
+ 
 }
 
-.nav__link--current {
-    color: $accent-color;
-    // position: relative;
-    // color: $accent-color;
-    // outline: transparent;
 
-    // &::after {
-    //         position: absolute;
-    //         bottom: -1px;
-    //         display: block;
-    //         content: "";
-    //         width: 100%;
-    //         height: 4px;
-    //         background-color: $accent-color;
-    //         border-radius: 2px;
-    //     }
+.nav__link--current { 
+       @media screen and(max-width:$pretablet) {
+        
+        color: $accent-color;
+    }
+   @media screen and(min-width:$tablet) {
+     position: relative;
+    color: $accent-color;
+    outline: transparent;
+
+    &::after {
+            position: absolute;
+            @media screen and(max-width:$predesktop) {
+                bottom: -1px;
+            }
+            bottom: -1px;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;
+        }
+   }
+   
 }
 .page-header__link {
+    
     color: inherit;
     display: flex;
     align-items: center;
-
-    // color: $primary-text-color;
-
+    flex-wrap: wrap;
+    
     transition: color 250ms $time-changes;
 
     &:hover,
@@ -92,58 +136,73 @@
         color: $accent-color;
             outline: transparent;
     }
+    
+               
+       
+        
         
 }
 .page-header__item:nth-child(1){
-font-weight: 500;
-    font-size: 34px;
-    line-height: calc(40 / 34);
-    letter-spacing: 0.02em;
-    color: $accent-color; 
-    margin-bottom: 32px;
+@media screen and(max-width: $pretablet) {
+        font-weight: 500;
+            font-size: 34px;
+            line-height: calc(40 / 34);
+            letter-spacing: 0.02em;
+            color: $accent-color;
+            margin-bottom: 32px;
+    }
+@media screen and (min-width:$tablet)and(max-width:$predesktop) {
+        margin-bottom: 10px;
+}
+}
+.page-header__item{
+        font-weight: 500;
+            font-size: 12px;
+            line-height: calc(14 / 12);
+            letter-spacing: 0.02em;
 }
 .page-header__item:nth-child(2) {
-        font-weight: 500;
+    @media screen and(max-width: $pretablet) {
+             font-weight: 500;
         font-size: 24px;
         line-height: calc(28 / 24);
         letter-spacing: 0.02em;
          color: $primary-text-color;
+        }
+       
 
 }
 .page-header__contacts {
-    @media screen and(max-width: $pretablet) {
+        @media screen and(max-width: $pretablet) {
         margin-bottom: 64px;
+            margin-left: 25px;
+           
     }
-    
+        @media screen and(min-width:$tablet) and(max-width:$predesktop) {
+            margin-top: 21px;
+        }
         
-      
+           @media screen and(min-width: $desktop) {
+              display: flex;
+                align-items: center;
+           }
 
-    // display: flex;
-    // align-items: center;
+  
 
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.02em;
+
 }
 
 .page-header__icon {
-   display: none;
-    // margin-right: 10px;
-    // fill: currentColor;
-}
-.page-header-social_list {
-    display: flex;
-    gap: 10px;
-}
-.page-header-social_link {
-    display: flex;
+   
+    @media screen and(max-width:$pretablet) {
+         display: none;
+    }
+    @media screen and(min_width:$tablet) and(max-width:$predesktop) {
+        margin-right: 8px;
+    }
+    
+    margin-right: 10px;
+    fill: currentColor;
 
-}
-.page-header-social_link::after{
-    margin-left: 10px;
-    content: "";
-    display: block; 
-    height: 22px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+
 }
