@@ -61,17 +61,18 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     // }
 }
 
-.hero-container {
-    @extend .container;
-    @media screen and(max-width:$pretablet) {
-        // padding: 118px 60px;
-        height: 400px;
+.hero .container {
+    text-align: center;
+     @media screen and(max-width:$pretablet) {
+        
+        // height: 400px;
+        padding: 118px 0;
     }
           @media screen and(min-width:$tablet) and(max-width:$predesktop) {
               padding: 118px 204px;
           }
                         @media screen and(min-width:$desktop) {
-                            padding: 200px 452px;
+                            padding: 200px 252px;
                         }
 
      
@@ -79,23 +80,23 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     @extend %flexCentered;
     flex-direction: column;
 
-}
+} 
 
-.hero__container-title {
- text-align: center;
-    @media screen and(max-width:$predesktop) {
-            max-width: 360px;
-                height: 84px;
-        }
+// .hero__container-title {
+//  text-align: center;
+//     @media screen and(max-width:$predesktop) {
+//             max-width: 360px;
+//                 height: 84px;
+//         }
     
-        @media screen and(min-width:$desktop) {
-            width: 696px;
-                height: 120px;
-        }
+//         @media screen and(min-width:$desktop) {
+//             width: 696px;
+//                 height: 120px;
+//         }
 
   
    
-}
+// }
 
 .hero__title {
 font-weight: 900;

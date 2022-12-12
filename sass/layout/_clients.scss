@@ -5,6 +5,7 @@
     // @extend %flexCentered;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     @media screen and(min-width: $desktop) {
            flex-wrap: unset;
@@ -20,8 +21,8 @@
     height: 92px;
      // width: 170px;
     // height: 92px;
-   @media screen and(max-width: $tablet) {
-    width: calc((100% - 2 * 30px) / 2);
+   @media screen and(min-width: $tablet) and(max-width:$predesktop) {
+    width: calc((100% - 2 * 30px) / 3);
    }
 }
 

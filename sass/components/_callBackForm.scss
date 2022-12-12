@@ -1,3 +1,4 @@
+
 .callback__title {
      font-weight: 700;
     font-size: 20px;
@@ -68,9 +69,9 @@
 
 .callback__checkbox {
     @extend %flexCentered;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    display: inline;
+   
+    // margin-bottom: 30px;
     letter-spacing: 0.03em;
         
     font-size: 12px;
@@ -81,7 +82,7 @@
             line-height: calc(24/14);
         }
 
-    
+     
 }
 .callback__link-agreement {
         letter-spacing: 0.03em;
@@ -142,4 +143,7 @@
         outline: 1px solid $accent-color;
     }
 }
-
+.callback__button {
+    @extend .button-main;
+    margin-top: 30px;
+}

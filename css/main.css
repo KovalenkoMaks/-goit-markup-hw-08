@@ -270,7 +270,7 @@ ul {
   padding: 0;
 }
 
-.projects__overflow, .callback__checkbox, .modal-button, .clients__link, .social__item, .social__item--bgc, .social-list, .services__decor, .services__list--decor, .feature__card, .hero-container, .button-main, .hero__button, .button__icon {
+.projects__overflow, .callback__checkbox, .modal-button, .clients__link, .social__item, .social__item--bgc, .social-list, .services__decor, .services__list--decor, .feature__card, .hero .container, .hero .footer__container, .button-main, .callback__button, .hero__button, .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,23 +307,23 @@ h2 {
   fill: currentColor;
 }
 
-.container, .footer__container, .hero-container {
+.container, .footer__container {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
-  .container, .footer__container, .hero-container {
+  .container, .footer__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container, .footer__container, .hero-container {
+  .container, .footer__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container, .footer__container, .hero-container {
+  .container, .footer__container {
     width: 1200px;
   }
 }
@@ -378,7 +378,7 @@ body {
   color: #ffffff;
 }
 
-.button-main, .hero__button, .button__icon {
+.button-main, .callback__button, .hero__button, .button__icon {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
@@ -395,7 +395,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-main:active, .hero__button:active, .button__icon:active {
+.button-main:active, .callback__button:active, .hero__button:active, .button__icon:active {
   background: #188CE8;
   outline: transparent;
 }
@@ -572,7 +572,7 @@ body {
 @media screen and (max-width: 767px) {
   .page-header__item:nth-child(1) {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 8vw;
     line-height: 1.1764705882;
     letter-spacing: 0.02em;
     color: #2196f3;
@@ -770,38 +770,23 @@ body {
   }
 }
 
-.hero-container {
+.hero .container, .hero .footer__container {
+  text-align: center;
   flex-direction: column;
 }
 @media screen and (max-width: 767px) {
-  .hero-container {
-    height: 400px;
+  .hero .container, .hero .footer__container {
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero-container {
+  .hero .container, .hero .footer__container {
     padding: 118px 204px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-container {
-    padding: 200px 452px;
-  }
-}
-
-.hero__container-title {
-  text-align: center;
-}
-@media screen and (max-width: 1199px) {
-  .hero__container-title {
-    max-width: 360px;
-    height: 84px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__container-title {
-    width: 696px;
-    height: 120px;
+  .hero .container, .hero .footer__container {
+    padding: 200px 252px;
   }
 }
 
@@ -1020,6 +1005,7 @@ body {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -1032,9 +1018,9 @@ body {
   width: calc((100% - 30px) / 2);
   height: 92px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1168,6 +1154,7 @@ body {
   width: 100%;
   min-height: 50px;
   margin-bottom: 20px;
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -1185,7 +1172,6 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe__field {
     width: 358px;
-    padding-left: 16px;
     margin-right: 12px;
     margin-bottom: 0;
   }
@@ -1229,6 +1215,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.2);
   padding: 93px 15px 94px 15px;
   opacity: 1;
@@ -1246,7 +1233,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 450px;
-  height: 609px;
+  min-height: 609px;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1339,9 +1326,7 @@ body {
 }
 
 .callback__checkbox {
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+  display: inline;
   letter-spacing: 0.03em;
   font-size: 12px;
   line-height: 1.1666666667;
@@ -1424,6 +1409,10 @@ body {
 }
 .callback__label:focus-within .callback__checkbox-field {
   outline: 1px solid #2196f3;
+}
+
+.callback__button {
+  margin-top: 30px;
 }
 
 .buttons-list {
