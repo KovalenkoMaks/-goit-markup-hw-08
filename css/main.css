@@ -648,6 +648,10 @@ body {
   }
 }
 
+.page-header-social__item {
+  margin-bottom: 7px;
+}
+
 .menu__container {
   background-color: #ffffff;
   display: flex;
