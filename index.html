@@ -44,12 +44,12 @@
                   
                     <ul class="page-header__contacts">
                       <li class="page-header__item">
-                        <a class="page-header__link" href="tel:+380961111111"><svg class="page-header__icon" width="10px" height="16px">
+                        <a class="page-header__link" href="tel:+380961111111"><svg class="page-header__icon page-header__icon--tel" width="10px" height="16px">
                             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                           </svg>+38 096 111 11 11</a>
                       </li>
                       <li class="page-header__item">
-                        <a class="page-header__link" href="mailto:info@devstudio.com"><svg class="page-header__icon" width="16px"
+                        <a class="page-header__link" href="mailto:info@devstudio.com"><svg class="page-header__icon page-header__icon--mail" width="16px"
                             height="12px">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                           </svg>
@@ -82,8 +82,8 @@
     <main>
 
       <!-- Hero  -->
-      <section >
-        <div class="hero">
+      <section class="hero" >
+        <div class="hero-container">
           <div class="hero__container-title">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           </div>
@@ -158,15 +158,14 @@
             <li class="services__item">
               <img
                  srcset="
-               ./images/services/services1-370.jpg  370w,
-               ./images/services/services1-740.jpg  740w
+               ./images/services/services1-370.jpg  1x,
+               ./images/services/services1-740.jpg  2x
                "
                
                src="/images/services/services3-370.jpg"
-               sizes="33vw"
+               
                 alt="Розробка сайтів"
-                width="370"
-                height="294"
+                
               />
               <div class="services__decor">
                 <h3 class="services__title">Десктопні нотатки</h3>
@@ -175,15 +174,13 @@
             <li class="services__item">
               <img
                  srcset="
-               ./images/services/services2-370.jpg  370w,
-               ./images/services/services2-740.jpg  740w
+               ./images/services/services2-370.jpg  1x,
+               ./images/services/services2-740.jpg  2x
                "
                
                src="/images/services/services3-370.jpg"
-               sizes="33vw"
-                alt="Розробка мобільних додатків"
-                width="370"
-                height="294"
+              alt="Розробка мобільних додатків"
+                            
               />
               <div class="services__decor">
                 <h3 class="services__title">Мобільні додатки</h3>
@@ -192,15 +189,12 @@
             <li class="services__item">
               <img
                  srcset="
-               ./images/services/services3-370.jpg  370w,
-               ./images/services/services3-740.jpg  740w
+               ./images/services/services3-370.jpg  1x,
+               ./images/services/services3-740.jpg  2x
                "
                
                src="/images/services/services3-370.jpg"
-               sizes="33vw"
-                alt="Розробка дизайн макету"
-                width="370"
-                height="294"
+               alt="Розробка дизайн макету"
               />
               <div class="services__decor">
                 <h3 class="services__title">Дизайнерські рішення</h3>
@@ -222,7 +216,7 @@
                ./images/staff/staff1-270.jpg  270w,
                ./images/staff/staff1-354.jpg  354w, 
                ./images/staff/staff1-450.jpg  450w,
-               ./images/staff/staff1-570.jpg  570w,
+               ./images/staff/staff1-540.jpg  540w,
                ./images/staff/staff1-708.jpg  708w,
                ./images/staff/staff1-900.jpg  900w
                "
@@ -276,7 +270,7 @@
                ./images/staff/staff2-270.jpg  270w,
                ./images/staff/staff2-354.jpg  354w, 
                ./images/staff/staff2-450.jpg  450w,
-               ./images/staff/staff2-570.jpg  570w,
+               ./images/staff/staff2-540.jpg  540w,
                ./images/staff/staff2-708.jpg  708w,
                ./images/staff/staff2-900.jpg  900w
                "
@@ -331,7 +325,7 @@
                ./images/staff/staff3-270.jpg  270w,
                ./images/staff/staff3-354.jpg  354w, 
                ./images/staff/staff3-450.jpg  450w,
-               ./images/staff/staff3-570.jpg  570w,
+               ./images/staff/staff3-540.jpg  540w,
                ./images/staff/staff3-708.jpg  708w,
                ./images/staff/staff3-900.jpg  900w
                "
@@ -386,7 +380,7 @@
                ./images/staff/staff4-270.jpg  270w,
                ./images/staff/staff4-354.jpg  354w, 
                ./images/staff/staff4-450.jpg  450w,
-               ./images/staff/staff4-570.jpg  570w,
+               ./images/staff/staff4-540.jpg  540w,
                ./images/staff/staff4-708.jpg  708w,
                ./images/staff/staff4-900.jpg  900w
                "

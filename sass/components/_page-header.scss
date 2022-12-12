@@ -1,7 +1,9 @@
 .page-header__container {
+    // position: relative;
+    // @extend %container;
     @media screen and(max-width: $pretablet) {
         padding: 16px 0px 16px 15px;
-        position: relative;
+        
         
     }
        
@@ -142,6 +144,21 @@
         
         
 }
+.page-header__item{
+        font-weight: 500;
+            font-size: 12px;
+            line-height: calc(14 / 12);
+            letter-spacing: 0.02em;
+            
+        @media screen and(min-width:$desktop) {
+            
+                font-size: 14px;
+                line-height: calc(16 / 14);
+                letter-spacing: 0.02em;
+            
+         
+        }
+}
 .page-header__item:nth-child(1){
 @media screen and(max-width: $pretablet) {
         font-weight: 500;
@@ -154,12 +171,6 @@
 @media screen and (min-width:$tablet)and(max-width:$predesktop) {
         margin-bottom: 10px;
 }
-}
-.page-header__item{
-        font-weight: 500;
-            font-size: 12px;
-            line-height: calc(14 / 12);
-            letter-spacing: 0.02em;
 }
 .page-header__item:nth-child(2) {
     @media screen and(max-width: $pretablet) {
@@ -197,6 +208,10 @@
     @media screen and(max-width:$pretablet) {
          display: none;
     }
+    @media screen and(min-width:$tablet) and(max-width:$predesktop) {
+        width: 14px;
+        height: 10px;
+    }
     @media screen and(min_width:$tablet) and(max-width:$predesktop) {
         margin-right: 8px;
     }
@@ -205,4 +220,16 @@
     fill: currentColor;
 
 
+}
+.page-header__icon--tel{
+    @media screen and(min-width:$tablet) and(max-width:$predesktop) {
+            width: 10px;
+            height: 14px;
+        }
+}
+.page-header__icon--mail {
+    @media screen and(min-width:$tablet) and(max-width:$predesktop) {
+            width: 14px;
+            height: 10px;
+        }
 }
