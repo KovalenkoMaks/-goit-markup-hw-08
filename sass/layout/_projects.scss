@@ -3,11 +3,16 @@
 }
 .buttons-list {
     display: flex;
+    
     justify-content: center;
     gap: 8px;
     flex-basis: calc((100% - 4 * 30px) / 5);
 
     margin-bottom: 50px;
+    @media screen and(max-width:$pretablet) {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
 }
 
 .projects-list {
