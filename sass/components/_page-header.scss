@@ -37,12 +37,12 @@
 }
 .nav__item{
     &:nth-child(1){
-            @media screen and(max-width:$predesktop) {
+            @media screen and(min-width:$tablet) and(max-width:$predesktop) {
                 margin-right: 51px;
             }
         }
     &:nth-child(2){
-        @media screen and(max-width:$predesktop) {
+        @media screen and(min-width:$tablet) and(max-width:$predesktop) {
                 margin-right: 50px;
             }
     }

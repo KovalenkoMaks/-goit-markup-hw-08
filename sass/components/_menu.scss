@@ -7,15 +7,18 @@
     background-color: $white;
     display: flex;
     flex-grow: 1;
+    
    
 
     @media screen and(max-width:$pretablet) {
         display: none;
-        padding: 15px;
+        padding: 48px 15px;
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
+            max-width: 482px;
+            height: 796px;
             &.is-open {
                     display: block;
                 }
