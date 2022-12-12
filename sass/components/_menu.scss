@@ -2,6 +2,7 @@
     background-color: $white;
     display: flex;
     flex-grow: 1;
+
     
     
    
@@ -22,17 +23,19 @@
             width: 100%;
             height: 100%;
             display: flex;
-            flex-direction: column;
+           
 
 
             &.is-open {
-                    display: block;
+                    display: flex;
                     position: fixed;
                         top: 0;
                         left: 0;
                         width: 100%;
                         // height: 796px;
                         transform: translateX(0);
+                        flex-direction: column;
+                            justify-content: space-between;
                         // opacity: 1;
                                     // transition: transform 5000ms linear;
                         
