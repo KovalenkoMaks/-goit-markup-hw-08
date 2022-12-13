@@ -276,9 +276,10 @@ ul {
   justify-content: center;
 }
 
-.portfolio, .clients, .staff, .services, .feature {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .portfolio, .clients, .staff, .services, .feature {
+    padding: 60px 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio, .clients, .staff, .services, .feature {
@@ -660,6 +661,7 @@ body {
 @media screen and (max-width: 767px) {
   .menu__container {
     display: none;
+    z-index: 999;
     overflow-y: scroll;
     padding: 48px 15px;
     transform: translateX(100%);
@@ -1435,13 +1437,36 @@ body {
 
 .projects-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .projects-list {
+    justify-content: start;
+  }
+}
+
+.projects__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .projects__link {
   display: block;
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__link:hover, .projects__link:focus {
